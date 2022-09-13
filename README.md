@@ -31,15 +31,14 @@ This github repository contains the code necessary to replicate the Lifespan Bra
 * GNU R Shiny App: [http://brainchart.io/](http://brainchart.io/)
 * Peer-reviewed publication:    
   + [Bethlehem, Seidlitz, White et al. Nature, 2022](https://www.nature.com/articles/s41586-022-04554-y)
-  + [Alexander-Bloch, et al. JAMA Psychiatry, 2022](https://jamanetwork.com/journals/jamapsychiatry/article-abstract/2792406)
-
-### Consortium
-To facilitate acknowledgement of this resource and the consortium that build it we keep a running list of contributors [here](https://docs.google.com/spreadsheets/d/1D8YNDcnhwlv2WcUDhreq3fwrkfpfGiFp0OGFVO5d-es/edit#gid=0), while we do not police usage of this resource we would encourage to either cite the original paper or include the "Lifespan Brain Chart Consortium" as a co-author (using the aforementioned spreadsheet as the reference for consortium membership.    
-
+  + [Alexander-Bloch, et al. JAMA Psychiatry, 2022](https://jamanetwork.com/journals/jamapsychiatry/article-abstract/2792406)   
 
 The repository also contains the objects necessary to reproduce the fitted curves, as seen in the article and web-app above.
 
 This repository does not contain any of the datasets. We do not have permission to distributed many of the studies included within the published analyses. However, many are available upon request from the original study groups; see the relevant supplementary material for details of all the studies. Before contacting us with specific queries about the models, data or tool please have a look at our [FAQ](./FAQ.md) page.
+
+### Consortium
+To facilitate acknowledgement of this resource and the consortium that build it we keep a running list of contributors [here](https://docs.google.com/spreadsheets/d/1D8YNDcnhwlv2WcUDhreq3fwrkfpfGiFp0OGFVO5d-es/edit#gid=0), while we do not police usage of this resource we would encourage to either cite the original paper or include the "Lifespan Brain Chart Consortium" as a co-author (using the aforementioned spreadsheet as the reference for consortium membership.    
 
 ## Datasets
 
