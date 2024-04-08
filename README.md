@@ -21,8 +21,7 @@
       - [Normalised Centiles](#normalised-centiles)
       - [Longitudinal Centiles](#longitudinal-centiles)
       - [Population curves](#population-curves)
-      - [Example plots](#example-plots).  
-  * [License](#license)
+      - [Example plots](#example-plots)
 
 ## Introduction
 
@@ -32,14 +31,11 @@ This github repository contains the code necessary to replicate the Lifespan Bra
 * GNU R Shiny App: [http://brainchart.io/](http://brainchart.io/)
 * Peer-reviewed publication:    
   + [Bethlehem, Seidlitz, White et al. Nature, 2022](https://www.nature.com/articles/s41586-022-04554-y)
-  + [Alexander-Bloch, et al. JAMA Psychiatry, 2022](https://jamanetwork.com/journals/jamapsychiatry/article-abstract/2792406)   
+  + Alexander-Bloch, et al. JAMA Psychiatry, In Press
 
 The repository also contains the objects necessary to reproduce the fitted curves, as seen in the article and web-app above.
 
 This repository does not contain any of the datasets. We do not have permission to distributed many of the studies included within the published analyses. However, many are available upon request from the original study groups; see the relevant supplementary material for details of all the studies. Before contacting us with specific queries about the models, data or tool please have a look at our [FAQ](./FAQ.md) page.
-
-### Consortium
-To facilitate acknowledgement of this resource and the consortium that build it we keep a running list of contributors [here](https://docs.google.com/spreadsheets/d/1D8YNDcnhwlv2WcUDhreq3fwrkfpfGiFp0OGFVO5d-es/edit#gid=0), while we do not police usage of this resource we would encourage to either cite the original paper or include the "Lifespan Brain Chart Consortium" as a co-author (using the aforementioned spreadsheet as the reference for consortium membership.    
 
 ## Datasets
 
@@ -267,11 +263,11 @@ We can readily extract the BIC for a given model, then compare across models. In
 ## 310-script
 EXTRACT.bfp$param$BIC ## compare BIC on all fitted models
 
-file.copy(from=file.path(PATHS$FIT.EXTRACT,"base200.GGalt.bfpNA.rds"),to=file.path(PATHS$PATH,"MODEL.rds"))
+file.copy(from=file.path(PATHS$MODEL,"base200.GGalt.bfpNA.rds"),to=file.path(PATHS$PATH,"MODEL.rds"))
 file.copy(from=file.path(PATHS$FIT.EXTRACT,"base200.GGalt.bfpNA.rds"),to=file.path(PATHS$PATH,"FIT.EXTRACT.rds"))
 ## or
-file.symlink(from=file.path("MODEL","base200.GGalt.bfpNA.rds"),to=file.path(PATHS$PATH,"MODEL.rds"))
-file.symlink(from=file.path("FIT.EXTRACT","base200.GGalt.bfpNA.rds"),to=file.path(PATHS$PATH,"FIT.EXTRACT.rds"))
+file.symlink(from=file.path(PATHS$MODEL,"base200.GGalt.bfpNA.rds"),to=file.path(PATHS$PATH,"MODEL.rds"))
+file.symlink(from=file.path(PATHS$FIT.EXTRACT,"base200.GGalt.bfpNA.rds"),to=file.path(PATHS$PATH,"FIT.EXTRACT.rds"))
 ```
 
 Our later scripts assume a single best model is selected, the last lines of code above copy (or create a link if on a system that allows such things).
@@ -467,8 +463,11 @@ Illustrating the longitudinal IQR for CN and non-CN across studies with follow-u
 
 
 
-## License
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+
+
+
+
 
 
 
