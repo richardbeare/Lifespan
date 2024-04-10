@@ -323,7 +323,7 @@ dim(PRIMARY$SUBSET) ##       the latter contains only observations used for fitt
 table(PRIMARY$SUBSET$Study) ## Studies U and V were not included in the orginal set
 
 NOVEL <- list()
-NOVEL$DATA <- dim(readRDS(file=file.path(PATHS$NOVEL,"Wandu_.n0200.rds"))) 
+NOVEL$DATA <- readRDS(file=file.path(PATHS$NOVEL,"Wandu_.n0200.rds"))
 ## or                                                                                                                                                                        
 NOVEL$DATA <- PRIMARY$DATA[ with(PRIMARY$DATA, which(Study=="U" & INDEX.OB==1 & INDEX.TYPE=="CN") ), ]
 ```
